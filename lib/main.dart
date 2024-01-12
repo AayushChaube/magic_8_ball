@@ -12,9 +12,15 @@ class BallPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Ask Me Anything'),
+          title: const Text(
+            'Ask Me Anything',
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
           backgroundColor: Colors.blue.shade900,
         ),
         backgroundColor: Colors.blue,
